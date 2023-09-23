@@ -1,0 +1,644 @@
+input[type="file"]{
+    display: none;
+}
+.custom-file-upload{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(195, 238, 149);
+    color: rgb(3, 21, 21);
+    border: 1px solid rgb(1, 1, 23);
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.custom-file-upload:hover{
+    /* display: block; */
+    border: 2px solid yellow;
+    background-color: rgb(226, 248, 182);
+}
+/* .custom-file-upload:hover input{
+    display: block;
+    border: 1px solid yellow;
+    background-color: brown;
+} */
+
+
+
+
+.progress-bar{
+    width: 100%;
+    background-color: rgb(114, 6, 168);
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress{
+    width: 0;
+    height: 100%;
+    background-color: red;
+    transition:width 5s ease-in-out;
+}
+
+.loading-spinner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.loading-spinner p{
+   width: 270px;
+   font-size: 30px;
+   color: rgb(24, 26, 26);
+}
+.spinner{
+    border: 4px solid rgb(0, 0, 0, 0.3);
+    border-top: 4px solid rgb(10, 12, 9);
+    border-radius: 70%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.loading-spinner{
+    margin-top: 10px;
+    position: relatives;
+}
+
+@keyframes spin{
+   0% { transform: rotate(0deg);}
+   100%{transform: rotate(360deg);}
+}
+
+
+
+
+
+.image-gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.image{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rebeccapurple;
+    box-shadow: 0 0 15px rgb(13, 12, 14);
+}
+
+.image img{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.image-caption{
+    background: linear-gradient(to bottom, rgb(13, 9, 9), rgb(202, 104, 58));
+    color: rgb(227, 239, 239);
+    padding: 10px;
+    border: 12px;
+
+    font-size: 12px;
+    font-weight: bolder;
+    text-decoration: none;
+    border-color: red;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+}
+
+
+.tooltip-container{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip{
+    position: relative;
+    background-color: red;
+    color: blue;
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.tooltip-text{
+    visibility: hidden;
+    background-color: red;
+    color: rgb(230, 229, 231);
+    border-radius: 4px;
+    padding: 10px;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 10s ease;
+}
+
+
+.tooltip-container:hover .tooltip-text{
+    visibility: visible;
+    background-color: rgb(2, 21, 21);
+    opacity: 1;
+}
+
+
+
+
+
+.styled-table{
+    width: 100%;
+    border-collapse: collapse;
+    
+    margin-bottom: 20px;
+}
+
+.styled-table thead{
+    background-color: blue;
+    color: yellow;
+}
+
+.styled-table th, .styled-table td{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgb(21, 21, 156);
+}
+.styled-table tbody tr:nth-child(even){
+    background-color: rgb(236, 143, 143);
+}
+
+.styled-table tbody tr:hover:nth-child(odd){
+    background-color: yellowgreen;
+}
+
+
+
+
+.dropbtn{
+
+    background-color: rgb(231, 12, 12);
+    border: none;
+    color: rgb(235, 232, 232);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: yellow;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(196, 199, 26);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: rgb(16, 20, 20);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.dropdown-content a:hover{
+    background-color: rgb(185, 168, 189);
+    border-radius: 15px;
+}
+
+
+.styled-hr{
+    border: none;
+    border-radius: 4px;
+    height: 5px;
+    margin: 20px 0;
+    background-color: red;
+}
+
+.gradient-box {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to top, red, yellow);
+    text-align: center;
+    padding: 20px;
+    color: blue;
+}
+
+header{
+    text-align: center;
+    background-color: blue;
+    color: yellow;
+    padding: 20px 0;
+    
+}
+
+header ul{
+    list-style: none;
+    padding: 0;
+    background-color: green;
+    
+}
+
+header li {
+    display: inline;
+    margin-right: 20px; 
+}
+
+header a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    
+}
+
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+
+
+/* ::selection{
+    background-color: aqua;
+    color: red;
+}
+
+
+header{
+    background-color: rgb(73, 19, 145);
+    color: rgb(14, 12, 12);
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    background-color: rgb(153, 31, 31);  
+}
+ 
+nav li{
+    display: inline;
+    margin: 20px;
+}
+
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+main{
+    background-color: rebeccapurple;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+           
+    nav li{
+        margin: 5px 0;
+    }
+
+    main{
+        max-width: 100%;
+        padding: 10px;
+    }
+        @media screen and (max-width: 480px) {
+            header {
+              font-size: 20px;
+            }
+    }
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.styled-blockquote{
+    background-color: rgb(187, 207, 187);
+    color: red;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px;
+
+}
+.styled-blockquote p{
+    font-style: italic;
+    font-size: 20px;
+    color: brown;
+}
+
+.styled-blockquote footer{
+    text-align: right;
+    color: black;
+    font-size: 15px
+}
+
+.shadow-elements{
+     text-align: center;
+     color: rgb(17, 11, 11);
+     background-color: rgb(240, 241, 241);
+     font-size: 100px;
+     border-radius: 20px;
+     width: 2000px;
+     padding: 20px;
+     box-shadow: 40px 40px 80px rgba(6, 7, 5, 0.2);
+     
+}
+
+
+
+
+
+.image-container{
+    text-align: center;
+    
+}
+.image-container img{
+    width: 50%;
+    height: auto;
+}
+
+.background-div{
+    background-image: url(https://wallpapercave.com/wp/wp4051722.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 250px;
+    text-align:center ;
+    color: rgb(212, 54, 26);
+}
+.background-div h2{
+    font-size: 50px;
+    margin-right: 70px;
+}
+.background-div p{
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+.container{
+     display: flex;
+     justify-content: space-between;
+     width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+
+     
+    }
+    .column{
+        flex-basis: calc(33.33%-20px);
+        background-color: yellow;
+        padding: 20px;
+        border-radius: 13px;
+        /* box-sizing: border-box; */
+
+}
+
+.column h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.column p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+.button-link{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(26, 9, 9);
+    border: 2px solid;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: red;
+    cursor: pointer;
+    transition: background-color 2s, color 2s;
+}
+
+.button-link:hover{
+    color: rgb(133, 226, 11);
+    background-color: rgb(253, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ordered-list{
+    list-style: none;
+    color: rgb(8, 8, 8);
+    background-color: rgb(171, 204, 204);
+    /* text-align: center; */
+}
+
+.ordered-list li::before{
+    content:counter(item-counter);
+    margin-right: 3px;
+    color: rgb(13, 12, 14);
+    counter-increment: item-counter;
+    
+}
+
+
+
+
+
+
+
+
+
+.styled-list{
+    list-style: none;
+    /* color: red; */
+    /* list-style-type:square; */
+    padding: 0;
+    margin: 26px;
+
+}
+
+.styled-list li{
+    font-size: 16px;
+    color: rgb(15, 15, 15);
+    margin-bottom: 23px;
+    font-weight: bold;
+    /* padding: 20px; */
+}
+
+.styled-list li::before{
+    content: "\2023";
+    color: rgb(69, 187, 23);
+    font-size: 30px;
+    font-weight: bold;
+    /* margin: 200px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+.horizontal-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: red;
+}
+.horizontal-menu li{
+    display: inline;
+    margin-right: 20px;
+    /* padding: 20px; */
+}
+
+.horizontal-menu li:last-child{
+    margin-right: 0;
+}
+.horizontal-menu a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 2px 2px;
+}
+.horizontal-menu a:hover{
+    background-color: rgb(226, 94, 94);
+    border-radius: 7px;
+}
+
+.hover-button{
+    background-color: yellowgreen;
+    color: blanchedalmond;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+
+}
+.hover-button:hover{
+    background-color: chocolate;
+}
+
+
+.Hover-text{
+    color: rgb(194, 183, 183);
+    background-color:blue;
+    text-align: center;
+    font-size: 56px;
+    cursor: pointer;
+   
+}
+.Hover-text:hover{
+    color: brown;
+}
+
+
+
+
+
+
+
+
+
+.elements{
+    color: aliceblue;
+    background-color: rgb(173, 14, 14);
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    border: 10px solid rgb(32, 36, 32);
+    height: 100vh;
+    padding: 20px;
+    margin: auto;
+} 
+
+h1{
+    background-color: black;
+    /* padding-bottom: 30px; */
+    /* padding-left: 40px; */
+    /* padding-right: 200px; */
+    padding: 10px 30px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-style:italic;
+    font-weight: bold;
+    font-size: 50px;
+}
