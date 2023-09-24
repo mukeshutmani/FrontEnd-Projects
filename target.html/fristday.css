@@ -1,4 +1,35 @@
 
+
+
+
+/* Style a select dropdown */
+.custom-select select{
+         /* appearance: none; */
+         /* -webkit-appearance: none; */
+         /* -moz-appearance: none; */
+         background-color: #e2ab2b;
+         color: rgb(43, 43, 43);
+         border: 1px solid yellowgreen;
+         padding: 10px;
+         width: 100px;
+         border-radius: 5px;
+         cursor: pointer;
+}  
+.custom-select select:hover{
+    background-color: red;
+} 
+
+.custom-select select:focus{
+    outline: none;
+    border-color: rgb(15, 179, 15);
+    box-shadow: 0 0 5px rgb(129, 5, 108);
+}
+
+
+
+
+
+
 /* Create a custom radio button */
 .custom-radio input[type="radio"]{
     display: none;
