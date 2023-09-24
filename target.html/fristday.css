@@ -1,4 +1,51 @@
 
+/* Create a sliding menu */
+.menu-button{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    background-color: blue;
+    margin: 3px 0;
+    transition: 1s;
+}
+
+.sliding-menu{
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(212, 69, 248);
+    color: gold;
+    transition: 1s;
+    padding: 20px;
+    box-shadow: 20px 0 5px rgba(149, 18, 18, 0.2);
+
+
+}
+
+.sliding-menu ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+   .sliding-menu ul li a{
+    text-decoration: none;
+    color: rgb(5, 7, 7);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+   }
+
+.content{
+    margin: 0;
+    transition: 1s;
+}
+   
+
 
 /* Style a Notification and alert box */
 .notification{
