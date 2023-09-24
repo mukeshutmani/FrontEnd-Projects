@@ -1,3 +1,40 @@
+
+
+/* Style a Notification and alert box */
+.notification{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #8a2be2;
+    color: #f0edf0;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 40);
+}
+.close-button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+.notification-content h3{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.notification-content p{
+    margin: 5px 0;
+    padding: 0;
+    font-size: 14px;
+
+}
+
+
+
 /* create a full page background image */
 .content{
     
