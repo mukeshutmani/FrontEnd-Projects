@@ -1,4 +1,42 @@
 
+/* Create a pagination system */
+.pagination{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.pagination li{
+    margin: 0 5px;
+}
+.page{
+    background-color: #8a2be2;
+    color: rgb(230, 255, 4);
+    border-radius: 3px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.prev, 
+.next{
+    text-decoration: none;
+    background-color: #8a2be2;
+    color: #f1dd05;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+.prev{
+    margin-right: 10px;
+}
+
+.next{
+    margin-left: 10px;
+}
+
+.next:hover,
+.prev:hover{
+          background-color: #b395d0;
+          color: #000000;
+}
 
 
 
