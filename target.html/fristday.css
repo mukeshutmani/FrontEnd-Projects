@@ -1,3 +1,40 @@
+/* style a Carousel  */
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+
+.carousel-slide {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.carousel-prev,
+.carousel-next {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
 
 /* Create a sliding menu */
 .menu-button{
