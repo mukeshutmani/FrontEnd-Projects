@@ -1,3 +1,57 @@
+/* style and create a basic card */
+body, html{
+    padding: 0;
+    margin: 0;
+   
+    
+    
+}
+
+
+.card{
+     
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: red;
+    border: 1px solid yellow;
+    box-shadow: 0 4px 6px rgba(178, 194, 136, 0.1);
+    
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+   padding: 20px;
+}
+.card-content h2{
+    color: yellow;
+}
+
+.card-content p{
+    font-size: 16px;
+    color: rgb(234, 227, 227);
+    margin-bottom: 20px;
+}
+
+.card-content a{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    background-color: greenyellow;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 1s;
+
+
+}
+.card-content a:hover{
+    background-color: blueviolet;
+}
+
 /* add a sticky footer */
 body, html{
     padding: 0;
