@@ -1,3 +1,53 @@
+/* style a timeline  */
+body, html{
+    padding: 0;
+    margin: 0;
+}
+.timeline{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    
+}
+
+.timeline-item{
+    width: 100%;
+    background-color: blueviolet;
+    max-width: 500px;
+    border:1px solid red;
+    margin: 20px 0;
+    position: relative;
+
+}
+
+.timeline-content{
+    padding: 20px;
+}
+
+.timeline-content h1{
+    font-size: 20px;
+    color: rgb(247, 247, 248);
+}
+
+.timeline-content p{
+    font-size: 16px;
+    color: rgb(4, 15, 11);
+}
+
+.timeline-item::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color:brown;
+}
+
+
+
 /* style and create a basic card */
 body, html{
     padding: 0;
