@@ -1,0 +1,48 @@
+body, html{
+    margin: 0;
+    padding: 50px;
+    
+
+}
+
+.toogle-switch{
+     display: inline-block;
+     position: relative;
+     width: 80px;
+     height: 35px;
+     background-color: rgb(195, 162, 162);
+     border-radius: 20px;
+     overflow: hidden;
+}
+
+.toogle-switch input{
+    display: none;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(237, 233, 43);
+    border-radius: 10%;
+    transition: 0.5s;
+}
+.toogle-switch input:checked+ .slider{
+    background-color:rgb(10, 98, 206) ;
+}
+.slider::before{
+   position: absolute;
+   content: "";
+   height: 30px;
+   width: 30px;
+   left: 2px;
+   bottom: 2px;
+   background-color: aliceblue;
+   border-radius: 50%;
+   transition: 0.5s;
+}
+.toogle-switch input:checked + .slider::before{
+    transform: translateX(46px);
+}
